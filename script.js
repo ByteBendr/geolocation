@@ -5,7 +5,7 @@ document.getElementById('getIpInfo').addEventListener('click', function() {
             const ipAddress = data.ip;
 
             // Fetch IP information from ip-api.com
-            fetch(`http://ip-api.com/json/${ipAddress}`)
+            fetch(`https://ip-api.com/json/${ipAddress}`)
                 .then(response => response.json())
                 .then(data => {
                     const ipInfo = {
